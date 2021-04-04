@@ -1,0 +1,312 @@
+:root {
+  --main-color: #e50914;
+  --less-black: rgba(60, 57, 57, 0.8);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+li {
+  list-style-type: none;
+}
+section {
+  border: none;
+  border-bottom: 7px solid;
+
+  background-color: black;
+}
+.netflix-top {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.8),
+      rgb(0, 0, 0, 0.8)
+    ),
+    url('https://assets.nflxext.com/ffe/siteui/vlv3/92bb3a0b-7e91-40a0-b27b-f2c3ac9ef6e4/18ea143f-0191-4a08-8c0e-d56fbf90de53/NG-en-20210322-popsignuptwoweeks-perspective_alpha_website_small.jpg')
+      no-repeat center center;
+  height: 655px;
+  background-size: cover;
+  border-color: var(--less-black);
+  margin: 0px;
+}
+.netflix-nav {
+  display: flex;
+  margin: 0px 15px;
+  padding: 35px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.svg-icon-netflix-logo {
+  fill: var(--main-color);
+  width: 140px;
+}
+
+.netflix-right-button button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  width: 80px;
+  height: 35px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.netflix-top-bottom {
+  display: flex;
+  margin: 130px auto;
+  color: white;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.netflix-top-bottom > * {
+  flex-basis: 800px;
+}
+.netflix-top-caption {
+  line-height: 1.1;
+  max-width: 640px;
+}
+
+.netflix-top-caption h1 {
+  font-size: calc(100% + 2.6vw);
+  font-weight: bold;
+}
+
+.netflix-top-caption h4 {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: calc(100% + 0.8vw);
+}
+
+.netflix-top-caption h5 {
+  margin-top: 25px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.netflix-email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.netflix-email-form input {
+  width: 420px;
+  height: 60px;
+  margin-right: 2px;
+}
+
+.netflix-email-form label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  min-height: 60px;
+  padding: 0px;
+  background-color: var(--main-color);
+  font-size: 25px;
+  color: white;
+  border: none;
+}
+
+.email-right-arrow {
+  line-height: 0.5;
+  margin-left: 12px;
+}
+.email-right-arrow svg {
+  top: 0;
+  left: 0;
+  margin: 5px 0;
+  height: 1.3rem;
+  transform: scaleX(0.9);
+}
+
+.email-right-arrow svg path {
+  fill: #fff;
+}
+
+.netflix-middle-1 {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 7px solid;
+  border-color: var(--less-black);
+}
+
+.netflix-middle-1 > div {
+  color: white;
+}
+
+.netflix-middle-left {
+  text-align: center;
+  color: white;
+  height: 100%;
+  margin: 5% 12px;
+  width: 600px;
+}
+
+.netflix-middle-left h1 {
+  font-size: 2.625rem;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.netflix-middle-left p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.netflix-middle-right {
+  position: relative;
+  display: flex;
+  height: 100%;
+
+  width: 460px;
+}
+
+.netflix-middle-right img {
+  z-index: 2;
+  width: 100%;
+  border: 0;
+}
+
+.netflix-middle-right .video-container {
+  position: absolute;
+  height: 400px;
+  left: 80px;
+  max-width: 410px;
+}
+
+.video-container video {
+  height: 230px;
+  max-width: 290px;
+}
+
+video.video-fix {
+  width: 400px;
+  height: 320px;
+  max-width: 350px;
+}
+
+.netflix-middle-faq {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-top: 30px;
+}
+
+.netflix-middle-faq h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.faq-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  font-size: 1.4rem;
+  font-weight: 100;
+  font-weight: 400;
+}
+
+.faq-item {
+  text-align: left;
+
+  max-width: 80%;
+  height: 100%;
+  margin-bottom: 12px;
+}
+
+.faq-item p {
+  display: block;
+  background-color: rgba(60, 57, 57, 0.8);
+}
+
+.faq-short {
+  padding: 18px;
+  margin-bottom: 5px;
+}
+
+.faq-long {
+  max-height: 1000px;
+
+  overflow: hidden;
+  height: 0px;
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+.faq-open {
+  padding: 18px;
+  height: 100%;
+  max-height: 1000px;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 0px) {
+  .netflix-email-form {
+    flex-direction: column;
+  }
+  .netflix-email-form input {
+    margin-bottom: 15px;
+    width: 400px;
+    height: 50px;
+  }
+  .netflix-email-form label {
+    min-height: 40px;
+    height: 20px;
+    font-size: 17px;
+    font-weight: 100;
+    width: 130px;
+  }
+  .email-right-arrow svg {
+    top: 0;
+    left: 0;
+    margin: 5px 0;
+    height: 1rem;
+    transform: scaleX(0.9);
+  }
+  .netflix-middle-right .video-container {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 470px) and (min-width: 0px) {
+  .video-container video {
+    width: 270px;
+  }
+  video.video-fix {
+    width: 500px;
+    height: 320px;
+  }
+
+  .netflix-middle-left h1 {
+    font-size: 1.625rem;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 0px) {
+  .faq-item {
+    max-width: 100%;
+  }
+}

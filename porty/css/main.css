@@ -1,0 +1,21 @@
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+
+.body-out-of-focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.border-right {
+  @apply border;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.gradient-blue {
+  background: linear-gradient(to right, #63b3ed, #3182ce);
+}
+
+.fade-outline {
+  transition: all 0.15s ease 0s;
+}

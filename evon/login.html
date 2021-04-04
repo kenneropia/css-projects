@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login in | Evon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      hr {
+        margin: auto;
+        max-width: 400px;
+        border: none;
+        border-top: 1px solid #cbd5e0;
+        color: #78797b;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+      }
+
+
+      hr::after {
+        content: 'or';
+        background: #fff;
+
+        padding: 0 26px;
+        position: relative;
+        top: -13px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class=" flex flex-col justify-center m-5  mt-24 md:mt-10">
+      <div class="">
+        <svg class="m-auto" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="40" fill="url(#paint0_linear)" />
+          <path
+            d="M50.4938 57.2969C50.775 57.7891 51.2672 58 51.9 58C52.4625 58 52.9547 57.7891 53.3063 57.2969L58.0172 50.5469C60.3375 47.1719 61.8844 44.9219 62.6578 43.7266C63.7125 42.0391 64.4156 40.6328 64.8375 39.5078C65.1891 38.3828 65.4 37.0469 65.4 35.5C65.4 33.1094 64.7672 30.8594 63.5719 28.75C62.3063 26.7109 60.6891 25.0938 58.65 23.8281C56.5406 22.6328 54.2906 22 51.9 22C49.4391 22 47.1891 22.6328 45.15 23.8281C43.0406 25.0938 41.4234 26.7109 40.2281 28.75C38.9625 30.8594 38.4 33.1094 38.4 35.5C38.4 37.0469 38.5406 38.3828 38.9625 39.5078C39.3141 40.6328 40.0172 42.0391 41.1422 43.7266C41.8453 44.9219 43.3922 47.1719 45.7828 50.5469C47.6813 53.2891 49.2281 55.5391 50.4938 57.2969ZM51.9 41.125C50.3531 41.125 49.0172 40.6328 47.8922 39.5078C46.7672 38.3828 46.275 37.0469 46.275 35.5C46.275 33.9531 46.7672 32.6875 47.8922 31.5625C49.0172 30.4375 50.3531 29.875 51.9 29.875C53.4469 29.875 54.7125 30.4375 55.8375 31.5625C56.9625 32.6875 57.525 33.9531 57.525 35.5C57.525 37.0469 56.9625 38.3828 55.8375 39.5078C54.7125 40.6328 53.4469 41.125 51.9 41.125Z"
+            fill="white" />
+          <path
+            d="M27.0938 57.2969C27.375 57.7891 27.8672 58 28.5 58C29.0625 58 29.5547 57.7891 29.9063 57.2969L34.6172 50.5469C36.9375 47.1719 38.4844 44.9219 39.2578 43.7266C40.3125 42.0391 41.0156 40.6328 41.4375 39.5078C41.7891 38.3828 42 37.0469 42 35.5C42 33.1094 41.3672 30.8594 40.1719 28.75C38.9062 26.7109 37.2891 25.0938 35.25 23.8281C33.1406 22.6328 30.8906 22 28.5 22C26.0391 22 23.7891 22.6328 21.75 23.8281C19.6406 25.0938 18.0234 26.7109 16.8281 28.75C15.5625 30.8594 15 33.1094 15 35.5C15 37.0469 15.1406 38.3828 15.5625 39.5078C15.9141 40.6328 16.6172 42.0391 17.7422 43.7266C18.4453 44.9219 19.9922 47.1719 22.3828 50.5469C24.2812 53.2891 25.8281 55.5391 27.0938 57.2969ZM28.5 41.125C26.9531 41.125 25.6172 40.6328 24.4922 39.5078C23.3672 38.3828 22.875 37.0469 22.875 35.5C22.875 33.9531 23.3672 32.6875 24.4922 31.5625C25.6172 30.4375 26.9531 29.875 28.5 29.875C30.0469 29.875 31.3125 30.4375 32.4375 31.5625C33.5625 32.6875 34.125 33.9531 34.125 35.5C34.125 37.0469 33.5625 38.3828 32.4375 39.5078C31.3125 40.6328 30.0469 41.125 28.5 41.125Z"
+            fill="white" />
+          <defs>
+            <linearGradient id="paint0_linear" x1="40" y1="0" x2="40" y2="80" gradientUnits="userSpaceOnUse">
+              <stop offset="0.331182" stop-color="#59A1FF" />
+              <stop offset="1" stop-color="#3D67F2" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="md:m-7 text-center m-5 mt-14">
+        <form class="flex items-center justify-center flex-col w-full" action="">
+          <input class="w-full fade-outline mb-4 rounded focus:outline-none sm:w-3/5 lg:w-2/5 py-3 px-5 bg-gray-100" type="text"
+            placeholder="Full Name" name="" id="">
+          <input class="w-full fade-outline mb-4 rounded focus:outline-none sm:w-3/5 lg:w-2/5 py-3 px-5 bg-gray-100" type="text"
+            placeholder="Email" name="" id="">
+
+          <button
+            class="gradient-blue rounded w-full sm:w-3/5 lg:w-2/5 py-3 text-white inline-block  ">
+            Log in </button>
+        </form>
+        <div class="m-auto mt-5 text-blue-500">
+          Forgot Password?
+          </span>
+        </div>
+      </div>
+
+      <div class="mt-7">
+        <hr class="b">
+      </div>
+      <div class="md:m-7 m-5 mt-14 ">
+        <div class="flex flex-col items-center">
+          <button class="rounded inline-flex w-full sm:w-3/5 lg:w-2/5  text-white inline-block bg-blue-800 ">
+            <span class="h-full  bg-blue-900 w-11">
+              <svg class="stroke-2" xmlns="http://www.w3.org/2000/svg" height="46" fill="none" width="45"
+                viewBox="0 0 46 44">
+                <path
+                  d="M23.798 31.9998V22.8373H26.8522L27.3448 19.2905H23.798V17.0244C23.798 16.0392 24.0936 15.251 25.5714 15.251H27.4433V12.0983C27.1478 12.0983 25.9655 11.9998 24.6847 11.9998C21.9261 11.9998 20.0542 13.6747 20.0542 16.7289V19.389H17V22.9358H20.0542V31.9998H23.798Z"
+                  fill="white"></path>
+              </svg>
+            </span>
+            <span class="m-auto">
+              Log in with Facebook
+            </span> </button>
+        </div>
+        <div class="flex mt-3 flex-col items-center">
+          <button class="rounded border-2 inline-flex w-full sm:w-3/5 lg:w-2/5  text-white inline-block bg-white ">
+            <span class="h-full border-right border-2 w-11">
+              <svg class="stroke-2" xmlns="http://www.w3.org/2000/svg" height="46" fill="none" width="45"
+                viewBox="0 0 46 44">
+                <path fill="#4285F4"
+                  d="M31.64 23.2003C31.64 22.4603 31.58 21.9203 31.45 21.3603H23V24.7003H27.96C27.86 25.5303 27.32 26.7803 26.12 27.6202L26.1032 27.7321L28.7749 29.8018L28.96 29.8203C30.66 28.2503 31.64 25.9403 31.64 23.2003Z">
+                </path>
+                <path
+                  d="M23 31.9998C25.43 31.9998 27.47 31.1997 28.96 29.8198L26.12 27.6197C25.36 28.1497 24.34 28.5197 23 28.5197C20.6201 28.5197 18.6001 26.9498 17.88 24.7798L17.7745 24.7887L14.9964 26.9388L14.96 27.0397C16.44 29.9797 19.48 31.9998 23 31.9998Z"
+                  fill="#34A853"></path>
+                <path
+                  d="M17.88 24.7802C17.69 24.2202 17.58 23.6202 17.58 23.0002C17.58 22.3802 17.69 21.7802 17.87 21.2202L17.8649 21.1009L15.052 18.9164L14.96 18.9602C14.35 20.1802 14 21.5502 14 23.0002C14 24.4502 14.35 25.8201 14.96 27.0402L17.88 24.7802Z"
+                  fill="#FBBC05"></path>
+                <path
+                  d="M23 17.48C24.69 17.48 25.83 18.21 26.48 18.82L29.02 16.34C27.4601 14.89 25.43 14 23 14C19.48 14 16.44 16.02 14.96 18.96L17.87 21.22C18.6001 19.05 20.6201 17.48 23 17.48Z"
+                  fill="#EB4335"></path>
+              </svg>
+            </span>
+            <span class="m-auto text-gray-500">
+              Log in with Google
+            </span> </button>
+        </div>
+      </div>
+      <div class="md:m-7 m-5 text-center mt-14 flex flex-col items-center ">
+
+        <div class="m-auto mt-10 text-gray-500">
+          Don't have an account? <span class="text-blue-500">
+            Sign Up
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
