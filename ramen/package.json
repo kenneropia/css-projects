@@ -1,0 +1,11 @@
+{
+  "name": "ramen",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+   "scripts": {
+    "dev": "NODE_ENV=development postcss tailwind.css -o ./css/style.css -w",
+    "build": "NODE_ENV=production postcss tailwind.css -o ./css/style.css"
+  }
+}

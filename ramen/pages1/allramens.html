@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="./../css/tailwind.css" />
     <title>Ramen</title>
   </head>
 
@@ -13,13 +14,11 @@
       <nav
         class="
           flex
-          md:px-0
-          px-2
+          mx-6
+          md:mx-10
           border-black border-bottom border-5
           flex-wrap
           justify-between
-          custom-md:nav
-          md:justify-around
           items-center
           pb-5
         "
@@ -75,256 +74,176 @@
             nav-subitems
           "
         >
-          <span class="bg-gray-300 rounded pb-1 px-2">Home</span>
-          <span> <a href="./pages/allramens.html"> Menu </a></span>
+          <span>Home</span>
+          <span class="bg-gray-300 rounded pb-1 px-2">Menu</span>
           <span>Order</span>
           <span>Story</span>
           <span>Contact</span>
         </div>
-        <div class="md:order-3 order-2">
-          <span
-            class="
-              uppercase
-              font-semibold
-              text-sm
-              inline-flex
-              px-5
-              py-2
-              text-white
-              bg-yellow-500
-            "
-          >
-            <a href="./pages/login.html"> log in </a>
+        <div
+          class="
+            md:order-3
+            inline-flex
+            justify-between
+            items-center
+            space-x-2
+            order-2
+          "
+        >
+          <span class="inline-flex w-10 h-10">
+            <img
+              class="rounded-3xl w-full h-full"
+              src="./../img/dp.jpg"
+              alt=""
+              srcset=""
+            />
+          </span>
+          <span class="inline-flex items-center w-10 h-10 text-lg">
+            KENNY
           </span>
         </div>
       </nav>
-      <main class="flex md:px-10 px-3 flex-col justify-start">
-        <div class="lg:6/12 w-full flex flex-wrap justify-between">
-          <div class="lg:order-1 order-2 lg:w-6/12">
-            <p class="md:text-6xl text-4xl capitalize font-bold w-full">
-              A bowl of love from japanese Cusine
-            </p>
-            <p class="md:w-9/12 w-10/12 mt-8 text-gray-500">
-              Ramen (ラーメン) is a noodle soup dish that was originally
-              imported from China and has become one of the most popular dishes
-              in Japan in recent decades.
-            </p>
-            <button
-              style="background-color: #ed461d"
-              class="mt-7 py-3 px-4 bg-red-600"
-            >
-              <a href="/pages/maindish.html">
-                <span class="text-white uppercase"> order now </span>
-              </a>
-            </button>
-          </div>
-          <div class="lg:order-2 order-1 w-full mt-5 lg:w-6/12">
-            <img src="./img/miniramen4.png" alt="" srcset="" />
-          </div>
-        </div>
-        <div
-          class="
-            flex
-            bg-white
-            lg:flex-row
-            justify-start
-            flex-col
-            mt-10
-            lg:mt-12
-          "
-        >
-          <div class="flex py-4 shadow-sm">
-            <div class="lg:w-4/12 md:w-44 h-28 md:h-full sm:mr-5 mr-3">
-              <img
-                class="h-full w-full"
-                src="./img/miniramen1.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="w-8/12 flex flex-col lg:w-6/12">
-              <h1 class="text-2xl font-semibold">Tomato Ramen</h1>
-              <span class="text-sm text-gray-500">
-                Hard boiled, soft boiled, raw and marinated eggs...
-              </span>
-              <span class="flex flex-row space-x-2 items-center mt-1 w-44">
-                <span class="font-light my-1 text-yellow-500">3000 NAIRA </span>
-                -
-
-                <span
-                  class="
-                    uppercase
-                    font-semibold
-                    text-sm
-                    inline-flex
-                    text-center
-                    px-3
-                    py-1
-                    text-white
-                    bg-yellow-500
-                  "
-                >
-                  <a href="/pages/maindish.html"> BUY </a>
-                </span>
-              </span>
-            </div>
-          </div>
-          <div class="flex py-4 shadow-sm">
-            <div class="lg:w-4/12 md:w-44 h-28 md:h-full sm:mr-5 mr-3">
-              <img
-                class="h-full w-full"
-                src="./img/miniramen2.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="w-8/12 flex flex-col lg:w-6/12">
-              <h1 class="text-2xl font-semibold">Tori Ramen</h1>
-              <span class="text-sm text-gray-500">
-                made of chicken and a white and creamy soup...
-              </span>
-              <span
-                class="flex flex-row justify-between items-center mt-1 w-44"
-              >
-                <span class="font-light my-1 text-yellow-500">3000 NAIRA</span>
-                -
-                <span
-                  class="
-                    uppercase
-                    font-semibold
-                    text-sm
-                    inline-flex
-                    text-center text-white
-                    space-x-2
-                  "
-                >
-                  <svg class="bg-yellow-500 rounded-2xl fill-current w-5 h-5">
-                    <use xlink:href="./img/icons.svg#icon-plus"></use>
-                  </svg>
-
-                  <span class="mx-2 text-yellow-500"> 1 </span>
-
-                  <svg class="bg-yellow-500 rounded-2xl fill-current w-5 h-5">
-                    <use xlink:href="./img/icons.svg#icon-minus"></use>
-                  </svg>
-                </span>
-              </span>
-            </div>
-          </div>
-          <div class="flex py-4 shadow-sm">
-            <div class="lg:w-4/12 md:w-44 h-28 md:h-full sm:mr-5 mr-3">
-              <img
-                class="h-full w-full"
-                src="./img/miniramen3.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="w-8/12 flex flex-col lg:w-6/12">
-              <h1 class="text-2xl font-semibold">Tonketou Ramen</h1>
-              <span class="text-sm text-gray-500">
-                Made of pork bones which has been boiled down...
-              </span>
-              <span
-                class="flex flex-row justify-between items-center mt-1 w-44"
-              >
-                <span class="font-light my-1 text-yellow-500">3000 NAIRA</span>
-                -
-                <a href="/pages/maindish.html">
-                  <span
-                    class="
-                      uppercase
-                      font-semibold
-                      text-sm
-                      inline-flex
-                      text-center
-                      items-center
-                      px-2
-                      w-16
-                      justify-around
-                      text-white
-                      rounded-2xl
-                      bg-yellow-500
-                    "
-                  >
-                    <span class="py-1">
-                      <svg class="fill-current w-5 h-5">
-                        <use xlink:href="./img/icons.svg#icon-plus"></use>
-                      </svg>
-                    </span>
-                    BUY
-                  </span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="
-            flex
-            border-b-[1.3px]
-            pb-3
-            border-black
-            flex-row
-            justify-start
-            mt-10
-          "
-        >
-          <p
+    </div>
+    <div class="flex flex-col mx-4 md:mx-10">
+      <form>
+        <label class="inline-flex h-8 items-center border-2 w-full">
+          <span class="h-full w-6 border-r-2">
+            <svg class="mt-2 mx-auto fill-current w-4 h-4">
+              <use xlink:href="./../img/icons.svg#icon-search"></use>
+            </svg>
+          </span>
+          <input
+            placeholder="Search..."
             class="
-              inline-flex
-              flex-col
-              text-gray-500
-              font-semibold
+              ml-4
               text-md
-              ml-auto
-              leading-8
-              capitalize
-              items-center
-              tracking-wide
-            "
-          >
-            <a
-              class="inline-flex flex-row items-center"
-              href="/pages/allramens.html"
-            >
-              Check Out More Dishes
-              <svg class="ml-2 fill-current w-5 h-5">
-                <use xlink:href="./img/icons.svg#icon-arrow-right"></use>
-              </svg>
-            </a>
-          </p>
-        </div>
-
-        <div
-          class="
-            flex
-            sm:justify-between
-            md:flex-row
-            flex-col
-            mt-4
-            md:space-y-0
-            space-y-3
-          "
-        >
-          <span
-            class="
-              text-lg text-center
-              md:w-auto
+              font-semibold
+              placeholder-gray-400
               w-full
-              inline-flex
-              justify-center
-              px-5
-              py-2
-              text-white
-              capitalize
-              bg-black
+              h-full
             "
-          >
-            <a href="/pages/contact.html"> Contact Us </a>
+            type="text"
+            name="search"
+            id=""
+          />
+        </label>
+      </form>
+    </div>
+    <div
+      class="
+        flex
+        bg-white
+        flex-col
+        mx-10
+        lg:flex-row
+        justify-start
+        flex-col
+        mt-10
+      "
+    >
+      <div class="flex py-4 shadow-sm">
+        <div class="lg:w-3/12 mr-5">
+          <img src="./../img/miniramen1.png" alt="" srcset="" />
+        </div>
+        <div class="w-8/12 flex flex-col lg:w-6/12">
+          <h1 class="text-2xl font-semibold">Tomato Ramen</h1>
+          <span class="text-sm text-gray-500">
+            Hard boiled, soft boiled, raw and marinated eggs...
+          </span>
+          <span class="flex flex-row justify-between items-center mt-1 w-40">
+            <span class="font-light my-1 text-yellow-500">3000 NAIRA</span>
+            -
+            <span
+              class="
+                uppercase
+                font-semibold
+                text-sm
+                inline-flex
+                text-center
+                px-3
+                py-1
+                text-white
+                bg-yellow-500
+              "
+            >
+              BUY
+            </span>
           </span>
         </div>
-      </main>
+      </div>
+      <div class="flex py-4 shadow-sm">
+        <div class="lg:w-3/12 mr-5">
+          <img src="./../img/miniramen2.png" alt="" srcset="" />
+        </div>
+        <div class="w-8/12 flex flex-col lg:w-6/12">
+          <h1 class="text-2xl font-semibold">Tori Ramen</h1>
+          <span class="text-sm text-gray-500">
+            made of chicken and a white and creamy soup...
+          </span>
+          <span class="flex flex-row justify-between items-center mt-1 w-44">
+            <span class="font-light my-1 text-yellow-500">3000 NAIRA</span>
+            -
+            <span
+              class="
+                uppercase
+                font-semibold
+                text-sm
+                inline-flex
+                text-center text-white
+                space-x-2
+              "
+            >
+              <svg class="bg-yellow-500 rounded-2xl fill-current w-5 h-5">
+                <use xlink:href="./../img/icons.svg#icon-plus"></use>
+              </svg>
+
+              <span class="mx-2 text-yellow-500"> 1 </span>
+
+              <svg class="bg-yellow-500 rounded-2xl fill-current w-5 h-5">
+                <use xlink:href="./../img/icons.svg#icon-minus"></use>
+              </svg>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="flex py-4 shadow-sm">
+        <div class="lg:w-3/12 mr-5">
+          <img src="./../img/miniramen3.png" alt="" srcset="" />
+        </div>
+        <div class="w-8/12 flex flex-col lg:w-6/12">
+          <h1 class="text-2xl font-semibold">Tonketou Ramen</h1>
+          <span class="text-sm text-gray-500">
+            Made of pork bones which has been boiled down...
+          </span>
+          <span class="flex flex-row justify-between items-center mt-1 w-44">
+            <span class="font-light my-1 text-yellow-500">3000 NAIRA</span>
+            -
+            <span
+              class="
+                uppercase
+                font-semibold
+                text-sm
+                inline-flex
+                text-center
+                items-center
+                px-2
+                w-16
+                justify-around
+                text-white
+                rounded-2xl
+                bg-yellow-500
+              "
+            >
+              <span class="py-1">
+                <svg class="fill-current w-5 h-5">
+                  <use xlink:href="./../img/icons.svg#icon-plus"></use>
+                </svg>
+              </span>
+              BUY
+            </span>
+          </span>
+        </div>
+      </div>
     </div>
   </body>
 </html>
