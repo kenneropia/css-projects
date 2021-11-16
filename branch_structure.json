@@ -1,0 +1,21 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "imgbot",
+    "main",
+    "ok",
+    "origin"
+  ],
+  "parent": {
+    "imgbot": "main",
+    "main": null,
+    "ok": "main",
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "imgbot",
+    "ok",
+    "origin"
+  ]
+}
